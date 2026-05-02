@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dojo Dog Token ($DOJO)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #000, #050505);
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 100px 20px 120px;
+  position: relative;
+}
+
+h1 {
+  font-size: 3.5em;
+  color: #D4AF37;
+}
+
+.tagline {
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+.glow-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(212,175,55,0.25), transparent 70%);
+  filter: blur(100px);
+  z-index: -1;
+}
+
+.mascot {
+  width: 220px;
+  margin: 40px auto;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 14px 26px;
+  border: 2px solid #D4AF37;
+  color: #D4AF37;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+.btn:hover {
+  background: #D4AF37;
+  color: #000;
+}
+
+.card {
+  background: #0a0a0a;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.contract-box {
+  border: 1px solid #D4AF37;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.meme-img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.mobile-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.mobile-bar a {
+  color: #D4AF37;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="glow-bg"></div>
+<h1>DOJO DOG TOKEN</h1>
+<p class="tagline">Discipline > Emotion 🥋</p>
+
+<img src="mascot.png" class="mascot" alt="Dojo Dog Mascot">
+
+<a href="#" class="btn">Buy</a>
+<a href="#" class="btn">Telegram<https://t.me/DojoDogToken>
+<a href="#" class="btn">X<https://x.com/DojoSolHQ>
+</header>
+
+<div class="section">
+<div class="card">
+<h2>Enter the Dojo</h2>
+<p>No roadmap. No promises. Just discipline.</p>
+</div>
+</div>
+
+<div class="section">
+<div class="card">
+<h2>Meme Gallery</h2>
+<div class="grid">
+<img src="meme1.png" class="meme-img">
+<img src="meme2.jpg" class="meme-img">
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="card">
+<h2>Contract</h2>
+<div class="contract-box" onclick="copyContract()">CLICK TO COPY</div>
+</div>
+</div>
+
+<footer>
+<p>© 2026 DOJO DOG TOKEN</p>
+</footer>
+
+<div class="mobile-bar">
+<a href="#">Buy</a>
+<a href="#">Telegram<https://t.me/DojoDogToken>
+<a href="#">X<https://x.com/DojoSolHQ>
+</div>
+
+<script>
+function copyContract() {
+  navigator.clipboard.writeText("PASTE_YOUR_CONTRACT_HERE");
+  alert("Copied!");
+}
+</script>
+
+</body>
+</html>
